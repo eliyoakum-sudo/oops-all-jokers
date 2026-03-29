@@ -1,0 +1,17 @@
+{
+  "id": "oopsalljokers",
+  "name": "oops! all jokers",
+  "author": [
+    "Eli Yoakum"
+  ],
+  "description": "an all joker mod by me Eli Yoakum A.K.A lime_pineapples",
+  "prefix": "oopsallj",
+  "main_file": "main.lua",
+  "version": "1.0.0",
+  "priority": 0,
+  "badge_colour": "666665",
+  "badge_text_colour": "FFFFFF",
+  "dependencies": [
+    "Steamodded (>=1.0.0~BETA-0827c)"
+  ]
+}
