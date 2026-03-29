@@ -55,7 +55,7 @@ SMODS.Joker{ --grenade cracked
         if context.end_of_round and context.game_over == false and context.main_eval  then
             if true then
                 if SMODS.pseudorandom_probability(card, 'group_0_e6c7e2b4', 1, card.ability.extra.odds, 'j_oopsallj_grenadecracked', false) then
-                    error("EasternFarmer Was Here")
+                    error("Boom you got hit by a grenade and died")
                     
                 end
             end
