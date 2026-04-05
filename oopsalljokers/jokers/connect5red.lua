@@ -16,7 +16,7 @@ SMODS.Joker{ --connect 5 red
         }
     },
     pos = {
-        x = 6,
+        x = 0,
         y = 1
     },
     display_size = {
@@ -24,7 +24,7 @@ SMODS.Joker{ --connect 5 red
         h = 95 * 1
     },
     cost = 4,
-    rarity = "oopsallj_connect_5",
+    rarity = "oopsallj_connect_5_red",
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -35,31 +35,15 @@ SMODS.Joker{ --connect 5 red
     
     calculate = function(self, card, context)
         if context.end_of_round and context.main_eval and G.GAME.blind.boss  then
-            if ((function()
-                for i, v in pairs(G.jokers.cards) do
-                    if v.config.center.key == "j_conect5red" then 
-                        return true
+            if (function()
+                local count = 0
+                for _, joker_owned in pairs(G.jokers.cards or {}) do
+                    if joker_owned.config.center.rarity == "oopsallj_connect_5_red" then
+                        count = count + 1
                     end
                 end
-            end)() and (function()
-                for i, v in pairs(G.jokers.cards) do
-                    if v.config.center.key == "j_conect5red" then 
-                        return true
-                    end
-                end
-            end)() and (function()
-                for i, v in pairs(G.jokers.cards) do
-                    if v.config.center.key == "j_conect5red" then 
-                        return true
-                    end
-                end
-            end)() and (function()
-                for i, v in pairs(G.jokers.cards) do
-                    if v.config.center.key == "j_conect5red" then 
-                        return true
-                    end
-                end
-            end)()) then
+                return to_big(count) == to_big(5)
+            end)() then
                 G.E_MANAGER:add_event(Event({
                     blocking = false,
                     func = function()

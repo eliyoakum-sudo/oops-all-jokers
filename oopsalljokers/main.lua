@@ -28,7 +28,7 @@ local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
 lenient_bignum = lenient_bignum or function(a) return a end
 
-local jokerIndexList = {28,22,39,17,4,25,7,8,26,27,20,21,12,11,18,19,9,10,23,24,38,1,2,3,13,14,15,16,36,37,5,6,29,30,33,34,31,32,35}
+local jokerIndexList = {19,15,27,11,3,17,5,18,14,8,7,12,6,26,1,2,9,10,25,4,20,21,23,22,16,24,13}
 
 local function load_jokers_folder()
     local mod_path = SMODS.current_mod.path
@@ -69,26 +69,18 @@ SMODS.ObjectType({
     cards = {
         ["j_oopsallj__4"] = true,
         ["j_oopsallj_air"] = true,
-        ["j_oopsallj_aircracked"] = true,
         ["j_oopsallj_bluepentagon"] = true,
-        ["j_oopsallj_bluepentagoncracked"] = true,
         ["j_oopsallj_collagedegree"] = true,
-        ["j_oopsallj_collagedegreecracked"] = true,
         ["j_oopsallj_earth"] = true,
-        ["j_oopsallj_earthcracked"] = true,
         ["j_oopsallj_fire"] = true,
-        ["j_oopsallj_firecracked"] = true,
+        ["j_oopsallj_hagrid"] = true,
         ["j_oopsallj_pi"] = true,
-        ["j_oopsallj_picracked"] = true,
         ["j_oopsallj_redpentagon"] = true,
-        ["j_oopsallj_redpentagoncracked"] = true,
-        ["j_oopsallj_refrence"] = true,
-        ["j_oopsallj_refrencecracked"] = true,
         ["j_oopsallj_sans"] = true,
-        ["j_oopsallj_sanscracked"] = true,
+        ["j_oopsallj_spamton"] = true,
+        ["j_oopsallj_spamtonneo"] = true,
         ["j_oopsallj_splashimage"] = true,
         ["j_oopsallj_water"] = true,
-        ["j_oopsallj_watercracked"] = true,
         ["j_oopsallj_x"] = true
     },
 })
@@ -98,18 +90,14 @@ SMODS.ObjectType({
     cards = {
         ["j_oopsallj_blue"] = true,
         ["j_oopsallj_c"] = true,
-        ["j_oopsallj_ccracked"] = true,
         ["j_oopsallj_connect5red"] = true,
         ["j_oopsallj_connect5yellow"] = true,
         ["j_oopsallj_green"] = true,
         ["j_oopsallj_grenade"] = true,
-        ["j_oopsallj_grenadecracked"] = true,
         ["j_oopsallj_lua"] = true,
-        ["j_oopsallj_luacracked"] = true,
         ["j_oopsallj_orange"] = true,
         ["j_oopsallj_purple"] = true,
         ["j_oopsallj_python"] = true,
-        ["j_oopsallj_pythoncracked"] = true,
         ["j_oopsallj_red"] = true,
         ["j_oopsallj_yellow"] = true
     },

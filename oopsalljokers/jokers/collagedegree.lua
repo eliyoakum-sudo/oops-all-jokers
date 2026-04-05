@@ -16,8 +16,8 @@ SMODS.Joker{ --collage degree
         }
     },
     pos = {
-        x = 0,
-        y = 2
+        x = 2,
+        y = 1
     },
     display_size = {
         w = 71 * 1, 

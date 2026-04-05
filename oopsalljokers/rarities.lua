@@ -29,14 +29,14 @@ SMODS.Rarity {
 }
 
 SMODS.Rarity {
-    key = "connect_5",
+    key = "connect_5_yellow",
     pools = {
         ["Joker"] = true
     },
-    default_weight = 1e-155,
-    badge_colour = HEX('55c355'),
+    default_weight = 1e-10,
+    badge_colour = HEX('bac355'),
     loc_txt = {
-        name = "connect 5"
+        name = "connect 5 yellow"
     },
     get_weight = function(self, weight, object_type)
         return weight
@@ -119,14 +119,29 @@ SMODS.Rarity {
 }
 
 SMODS.Rarity {
-    key = "cracked",
+    key = "connect_5_red",
     pools = {
         ["Joker"] = true
     },
-    default_weight = 0,
-    badge_colour = HEX('6A7A8B'),
+    default_weight = 1e-10,
+    badge_colour = HEX('95343b'),
     loc_txt = {
-        name = "cracked"
+        name = "connect 5 red"
+    },
+    get_weight = function(self, weight, object_type)
+        return weight
+    end,
+}
+
+SMODS.Rarity {
+    key = "click_bait",
+    pools = {
+        ["Joker"] = true
+    },
+    default_weight = 0.1,
+    badge_colour = HEX('2e222e'),
+    loc_txt = {
+        name = "click bait"
     },
     get_weight = function(self, weight, object_type)
         return weight

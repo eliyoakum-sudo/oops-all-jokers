@@ -16,8 +16,8 @@ SMODS.Joker{ --blue pentagon
         }
     },
     pos = {
-        x = 0,
-        y = 4
+        x = 9,
+        y = 1
     },
     display_size = {
         w = 71 * 1, 

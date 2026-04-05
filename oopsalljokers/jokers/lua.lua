@@ -18,8 +18,8 @@ SMODS.Joker{ --lua.
         }
     },
     pos = {
-        x = 2,
-        y = 1
+        x = 8,
+        y = 0
     },
     display_size = {
         w = 71 * 1, 

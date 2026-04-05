@@ -17,7 +17,7 @@ SMODS.Joker{ --python
         }
     },
     pos = {
-        x = 9,
+        x = 7,
         y = 0
     },
     display_size = {

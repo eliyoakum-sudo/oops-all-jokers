@@ -3,21 +3,24 @@ SMODS.Joker{ --pi
     key = "pi",
     config = {
         extra = {
-            pi = 3.141592653589793
+            xmult0 = 3.141592653589793
         }
     },
     loc_txt = {
         ['name'] = 'pi',
         ['text'] = {
-            [1] = 'When a card is scored {C:red}X3.141592653589793238462643383279502884197169399375105820974944592307816406286',
-            [2] = '208998628034825342117067982148086513282306647093844609550582231725359408128481 Mult {}'
+            [1] = 'when a card is scored {C:red}X3.14159265358979',
+            [2] = '32384626433832795028841971693993751058209749',
+            [3] = '44592307816406286 20899862803482',
+            [4] = '5342117067982148086513282306647093844',
+            [5] = '609550582231725359408128481{} Mult'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 3,
+        x = 4,
         y = 2
     },
     display_size = {
@@ -34,15 +37,10 @@ SMODS.Joker{ --pi
     atlas = 'CustomJokers',
     pools = { ["oopsallj_oopsallj_jokers"] = true },
     
-    loc_vars = function(self, info_queue, card)
-        
-        return {vars = {card.ability.extra.pi}}
-    end,
-    
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
             return {
-                Xmult = card.ability.extra.pi
+                Xmult = 3.141592653589793
             }
         end
     end
