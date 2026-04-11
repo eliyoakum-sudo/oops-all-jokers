@@ -10,7 +10,7 @@ SMODS.Joker{ --SPAMTON NEO
     loc_txt = {
         ['name'] = 'SPAMTON NEO',
         ['text'] = {
-            [1] = 'When a card is scored {C:red}X1000{} Mult and {C:blue}X1000{} chps'
+            [1] = 'When a card is scored {C:red}X1000{} Mult and {C:blue}X1000{} Chips'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
